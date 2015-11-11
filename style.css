@@ -32,7 +32,7 @@ body
     width:100%;
     min-height:100%;
     background-color: white;
-    color: #555;
+    /*color: #555;*/
     font-size: 12px;
     font-family: "square721_btroman";
     line-height: 16.66px; /* 50/3 */
@@ -65,7 +65,8 @@ a:hover { text-decoration: underline; }
 a:before
 {
     content:"▶";
-    color:#EB1D21; /* red */
+    /*color:#EB1D21;*/ /* red */
+    color:black;
     font-size: 9px;
     padding-right:1em;
 }
@@ -109,6 +110,7 @@ h2.tick-right:after { right:0px; }
 h3
 {
     /*font-weight: bold;*/
+    color:#999;
     font-size: 12px;
     /*text-transform: uppercase;*/
     margin-top: 33.33px;
