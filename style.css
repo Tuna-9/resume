@@ -86,7 +86,23 @@ h2
     border-bottom:1px dotted rgba(0,0,0,0.4);
     line-height: 50px;
     margin-bottom: 1em;
+    position: relative;
 }
+
+h2.tick-left:before,
+h2.tick-right:after
+{
+    content: "";
+    position: absolute;
+    bottom:-1px;
+    width:4px;
+    height:1px;
+    background: black;
+}
+
+h2.tick-left:before { left:0px; }
+h2.tick-right:after { right:0px; }
+
 
 h3
 {
@@ -148,22 +164,6 @@ section
 {
     position: relative;
 }
-
-section:before,
-section:after
-{
-    content:"";
-    display:block;
-    position: absolute;
-    top:0px;
-    width:1px;
-    height:2px;
-    background: black;
-}
-
-section:before { left:0px; }
-section:after { right:-1px; }
-
 
 section.main
 {
