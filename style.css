@@ -76,8 +76,7 @@ h1, h2, h3 { color:black; font-weight: bold; }
 
 h1
 {
-    font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
     line-height: 50px;
 }
@@ -147,61 +146,42 @@ section .subcol-3:first-of-type
 
 section
 {
-    padding:0px;
     position: relative;
 }
 
-
-section:before
-{
-    content:"";
-    display:block;
-    position: absolute;
-    top:0px;
-    left:0px;
-    width:1px;
-    height:2px;
-    background: black;
-}
-
+section:before,
 section:after
 {
     content:"";
     display:block;
     position: absolute;
     top:0px;
-    right:-1px;
     width:1px;
     height:2px;
     background: black;
 }
+
+section:before { left:0px; }
+section:after { right:-1px; }
+
 
 section.main
 {
     border-top:1px solid rgba(0,0,0,0.15);
 }
 
-section.main:before
-{
-    content:"";
-    display:block;
-    position: absolute;
-    top:0px;
-    left:0px;
-    width:1px;
-    height:4px;
-    background: black;
-}
 
+section.main:before,
 section.main:after
 {
     content:"";
     display:block;
     position: absolute;
     top:0px;
-    right:-1px;
     width:1px;
     height:4px;
     background: black;
 }
 
+section.main:before { left:0px; }
+section.main:after { right:-1px; }
