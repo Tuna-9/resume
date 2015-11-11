@@ -106,7 +106,7 @@ h2.tick-right:after
     content: "";
     position: absolute;
     bottom:-1px;
-    width:5px;
+    width:4px;
     height:1px;
     background: black;
 }
@@ -196,10 +196,10 @@ footer:after
     position: absolute;
     top:0px;
     width:1px;
-    height:5px;
+    height:4px;
 }
 
 header:before { top:0px;  left:0px;   }
 header:after  { top:0px;  right:-1px; }
-footer:before { top:-5px; left:0px;   }
-footer:after  { top:-5px; right:-1px; }
+footer:before { top:-4px; left:0px;   }
+footer:after  { top:-4px; right:-1px; }
