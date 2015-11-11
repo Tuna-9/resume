@@ -50,7 +50,7 @@ body
     background-position: center top;
     background-repeat: repeat;
     /*opacity: 0.3;*/
-    opacity: 0;
+    opacity: 1;
 }
 
 a
@@ -109,10 +109,8 @@ h2.tick-right:after { right:0px; }
 
 h3
 {
-    /*font-weight: bold;*/
     color:#999;
     font-size: 12px;
-    /*text-transform: uppercase;*/
     margin-top: 33.33px;
     line-height: 16.66px;
 }
@@ -120,7 +118,7 @@ h3
 
 #content
 {
-    width:1000px;
+    width:950px;
     padding-top:100px;
     padding-bottom:50px;
     margin-left: auto;
@@ -131,21 +129,21 @@ h3
     /*border:1px solid grey;*/
 }
 
-.col { width:400px; }
+.col { width:350px; }
 .col:first-of-type { float:left;  margin-left:75px;  }
 .col:last-of-type  { float:right; margin-right:75px; }
 
 
-.subcol-3
+.subcol-2
 {
     float:left; 
     margin-left:50px;
 }
 
-.subcol-3 { width:100px; }
+.subcol-2 { width:150px; }
 
 
-.subcol-3:first-of-type
+.subcol-2:first-of-type
 {
     margin-left: 0px;
 }
