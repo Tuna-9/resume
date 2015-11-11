@@ -50,7 +50,7 @@ body
     background-position: center top;
     background-repeat: repeat;
     /*opacity: 0.3;*/
-    opacity: 1;
+    opacity: 0;
 }
 
 a
