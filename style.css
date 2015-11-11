@@ -72,7 +72,9 @@ a:before
 }
 
 
-h1, h2, h3
+h1,
+h2,
+h3
 {
     color:black;
     font-weight: bold;
@@ -114,6 +116,15 @@ h3
     margin-top: 33.33px;
     line-height: 16.66px;
 }
+
+h1 span,
+h2 span,
+h3 span
+{
+    font-weight: normal;
+    float:right;
+}
+
 
 
 #content
