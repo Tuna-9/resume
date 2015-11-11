@@ -53,6 +53,9 @@ body
     opacity: 0;
 }
 
+.fl { float:left; }
+.fr { float:right; }
+
 a
 {
     display:block;
@@ -74,24 +77,27 @@ a:before
 
 h1,
 h2,
-h3
+h3,
+h4
 {
     color:black;
     font-weight: bold;
-    line-height: 50px;
+    position: relative;
 }
 
 h1
 {
-    font-size: 20px;
+    font-size: 24px;
     text-transform: uppercase;
+    line-height: 50px;
 }
 
 h2
 {
-    border-bottom:1px dotted #AAA;
+    text-transform: uppercase;
+    border-bottom:1px dotted #999;
     margin-bottom: 1em;
-    position: relative;
+    line-height: 50px;
 }
 
 h2.tick-left:before,
@@ -100,7 +106,7 @@ h2.tick-right:after
     content: "";
     position: absolute;
     bottom:-1px;
-    width:4px;
+    width:5px;
     height:1px;
     background: black;
 }
@@ -117,12 +123,13 @@ h3
     line-height: 16.66px;
 }
 
-h1 span,
-h2 span,
-h3 span
+h4,
+span.light
 {
+    display:inline;
+    color:#999;
     font-weight: normal;
-    float:right;
+    line-height: 16.66px;
 }
 
 
@@ -174,7 +181,7 @@ footer
 header,
 footer
 {
-    border-top:1px dotted #AAA;
+    border-top:1px dotted #999;
 }
 
 
@@ -189,10 +196,10 @@ footer:after
     position: absolute;
     top:0px;
     width:1px;
-    height:4px;
+    height:5px;
 }
 
 header:before { top:0px;  left:0px;   }
 header:after  { top:0px;  right:-1px; }
-footer:before { top:-4px; left:0px;   }
-footer:after  { top:-4px; right:-1px; }
+footer:before { top:-5px; left:0px;   }
+footer:after  { top:-5px; right:-1px; }
