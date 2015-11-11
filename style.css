@@ -59,6 +59,14 @@ a
     text-decoration: none;
 }
 
+a:before
+{
+    content:"▶";
+    font-size: 9px;
+    position: absolute;
+    left:-2em;
+}
+
 b { font-weight: bold; }
 p { margin-bottom: 1em;}
 
@@ -72,20 +80,20 @@ h1
 
 h2
 {
-    font-weight: bold;
-    font-size: 12px;
-    text-transform: uppercase;
+    border-bottom:1px dotted rgba(0,0,0,0.4);
     line-height: 50px;
+    margin-bottom: 1em;
 }
-
 
 h3
 {
-    border-bottom:1px dotted rgba(0,0,0,0.4);
-    line-height: 50px;
-    margin-bottom: 16.66px;
-    margin-top: -1px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 33.33px;
+    line-height: 16.66px;
 }
+
 
 #content
 {
@@ -96,7 +104,7 @@ h3
     overflow: hidden;
 
     /* FOR DEBUG ONLY */
-    border:1px solid grey;
+    /*border:1px solid grey;*/
 }
 
 .col { width:400px; }
@@ -138,10 +146,9 @@ section
 {
     padding:0px;
     position: relative;
-    overflow: hidden;
 }
 
-/*
+
 section:before
 {
     content:"";
@@ -149,7 +156,7 @@ section:before
     position: absolute;
     top:0px;
     left:0px;
-    width:1px;
+    width:2px;
     height:2px;
     background: black;
 }
@@ -160,15 +167,14 @@ section:after
     display:block;
     position: absolute;
     top:0px;
-    right:0px;
-    width:1px;
+    right:-1px;
+    width:2px;
     height:2px;
     background: black;
 }
-*/
+
 section.main
 {
-    margin-top:-1px; /* accounts for 1px border */
     border-top:1px solid rgba(0,0,0,0.15);
 }
 
@@ -190,7 +196,7 @@ section.main:after
     display:block;
     position: absolute;
     top:0px;
-    right:0px;
+    right:-1px;
     width:1px;
     height:4px;
     background: black;
