@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'square721_btroman';
+    /*src: url('fonts/tt0246m.eot');*/
+    /*src: url('fonts/tt0246m.eot?#iefix') format('embedded-opentype');*/
+    /*src: url('fonts/tt0246m.woff2') format('woff2');*/
+    src: url('fonts/tt0246m.woff') format('woff');
+    /*src: url('fonts/tt0246m.ttf') format('truetype');*/
+    /*src: url('fonts/tt0246m.svg#square721_btroman') format('svg');*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    /* set everything to border-box */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 100%;
+    min-height: 100%;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body
+{
+    background-color: white;
+
+    color: black;
+    font-size: 12px;
+    font-family: "square721_btroman";
+    /*letter-spacing: 0.06em;*/ /* TODO: looks good on everything except linux :( */
+    /*line-height: 150%;*/
+    line-height: 16.66px;
+}
+
+a
+{
+    display:block;
+    color:inherit;
+    text-decoration: none;
+}
+
+b { font-weight: bold; }
+
+h1
+{
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 33.33px;
+}
+
+h2
+{
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 33.33px;
+
+}
+
+h3
+{
+    border-bottom:1px dotted rgba(0,0,0,0.5);
+    margin-bottom: 16.66px;
+}
+
+#content
+{
+    width:1000px;
+    padding-top:100px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+
+    /* FOR DEBUG ONLY */
+    border:1px solid grey;
+}
+
+.col { width:400px; }
+.col:first-of-type { float:left;  margin-left:75px;  }
+.col:last-of-type  { float:right; margin-right:75px; }
+
+
+.subcol-2,
+.subcol-3 { float:left; }
+
+.subcol-2 { width:190px; margin-left:20px;}
+.subcol-3 { width:120px; margin-left:20px; }
+
+
+section .subcol-2:first-of-type,
+section .subcol-3:first-of-type
+{
+    margin-left: 0px;
+}
+
+.null
+{
+    display:block;
+    width:100%;
+}
+
+
+
+
+
+
+
+
+section
+{
+    padding:25px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+section:before
+{
+    content:"";
+    display:block;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:1px;
+    height:2px;
+    background: black;
+}
+
+section:after
+{
+    content:"";
+    display:block;
+    position: absolute;
+    top:0px;
+    right:0px;
+    width:1px;
+    height:2px;
+    background: black;
+}
+
+section.main
+{
+    border-top:1px solid rgba(0,0,0,0.15);
+}
+
+section.main:before
+{
+    content:"";
+    display:block;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:1px;
+    height:4px;
+    background: black;
+}
+
+section.main:after
+{
+    content:"";
+    display:block;
+    position: absolute;
+    top:0px;
+    right:0px;
+    width:1px;
+    height:4px;
+    background: black;
+}
+
