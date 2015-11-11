@@ -60,31 +60,33 @@ a
     text-decoration: none;
 }
 
+a:hover { text-decoration: underline; }
+
 a:before
 {
     content:"▶";
-    color:black;
+    color:#EB1D21; /* red */
     font-size: 9px;
-    position: absolute;
-    left:-2em;
+    padding-right:1em;
 }
 
-b { font-weight: bold; }
-p { margin-bottom: 1em;}
 
-h1, h2, h3 { color:black; font-weight: bold; }
+h1, h2, h3
+{
+    color:black;
+    font-weight: bold;
+    line-height: 50px;
+}
 
 h1
 {
     font-size: 20px;
     text-transform: uppercase;
-    line-height: 50px;
 }
 
 h2
 {
     border-bottom:1px dotted #AAA;
-    line-height: 50px;
     margin-bottom: 1em;
     position: relative;
 }
@@ -132,18 +134,15 @@ h3
 .col:last-of-type  { float:right; margin-right:75px; }
 
 
-.subcol-2,
 .subcol-3
 {
     float:left; 
     margin-left:50px;
 }
 
-.subcol-2 { width:175px; }
 .subcol-3 { width:100px; }
 
 
-.subcol-2:first-of-type,
 .subcol-3:first-of-type
 {
     margin-left: 0px;
