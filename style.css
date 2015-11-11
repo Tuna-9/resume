@@ -83,7 +83,7 @@ h1
 
 h2
 {
-    border-bottom:1px dotted rgba(0,0,0,0.4);
+    border-bottom:1px dotted #AAA;
     line-height: 50px;
     margin-bottom: 1em;
     position: relative;
@@ -118,6 +118,7 @@ h3
 {
     width:1000px;
     padding-top:100px;
+    padding-bottom:50px;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -142,46 +143,46 @@ h3
 .subcol-3 { width:100px; }
 
 
-section .subcol-2:first-of-type,
-section .subcol-3:first-of-type
+.subcol-2:first-of-type,
+.subcol-3:first-of-type
 {
     margin-left: 0px;
 }
 
-.null
-{
-    display:block;
-    width:100%;
-}
 
 
 
 
 
-
-
-section
+section,
+header,
+footer
 {
     position: relative;
 }
 
-section.main
+header,
+footer
 {
-    border-top:1px solid rgba(0,0,0,0.15);
+    border-top:1px dotted #AAA;
 }
 
 
-section.main:before,
-section.main:after
+header:before,
+header:after,
+footer:before,
+footer:after
 {
     content:"";
+    background: black;
     display:block;
     position: absolute;
     top:0px;
     width:1px;
     height:4px;
-    background: black;
 }
 
-section.main:before { left:0px; }
-section.main:after { right:-1px; }
+header:before { top:0px;  left:0px;   }
+header:after  { top:0px;  right:-1px; }
+footer:before { top:-4px; left:0px;   }
+footer:after  { top:-4px; right:-1px; }
