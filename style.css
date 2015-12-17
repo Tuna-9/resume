@@ -72,6 +72,12 @@ h4
 
 h1
 {
+    /*
+        manual position tweak to account for weirdness in the font
+    */
+    position: relative;
+    right:1px;
+
     font-size: 24px;
     text-transform: uppercase;
     line-height: 50px;
