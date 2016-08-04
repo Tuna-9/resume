@@ -59,6 +59,13 @@ a:before
     padding-right:1em;
 }
 
+p a
+{
+    display:inline;
+    text-decoration: underline;
+}
+
+p a:before { display:none; }
 
 h1,
 h2,
