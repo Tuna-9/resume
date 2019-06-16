@@ -18,6 +18,8 @@ html {
 
     width: 100%;
     min-height: 100%;
+
+    -webkit-print-color-adjust: exact;
 }
 
 *, *:before, *:after {
@@ -117,7 +119,8 @@ h3
 {
     color:#999;
     font-size: 12px;
-    margin-top: 33.33px;
+/*    margin-top: 33.33px;*/
+    margin-top: 25px;
     line-height: 16.66px;
 }
 
@@ -130,14 +133,18 @@ span.light
     line-height: 16.66px;
 }
 
-
+sup
+{
+    vertical-align: super;
+    font-size: 6pt;
+}
 
 #content
 {
     background: white;
 
     width:950px;
-    padding-top:100px;
+    padding-top:50px;
     padding-bottom:50px;
     margin-left: auto;
     margin-right: auto;
@@ -147,7 +154,7 @@ span.light
     /*border:1px solid grey;*/
 }
 
-.col { width:350px; }
+.col { width:375px; }
 .col:first-of-type { float:left;  margin-left:75px;  }
 .col:last-of-type  { float:right; margin-right:75px; }
 
@@ -171,6 +178,7 @@ footer
     position: relative;
 }
 
+/*
 header,
 footer
 {
@@ -196,6 +204,7 @@ header:before { top:0px;  left:0px;   }
 header:after  { top:0px;  right:0px; }
 footer:before { top:-4px; left:0px;   }
 footer:after  { top:-4px; right:0px; }
+*/
 
 
 /* make the print cover the full page */
